@@ -1,49 +1,5 @@
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+Aktuelle Gewinner:
 
-public class EinfachesFormular {
-
-    public static void main(String[] args) {
-        // Fenster erstellen
-        JFrame frame = new JFrame("Einfaches Formular");
-        frame.setSize(300, 200);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setLayout(new GridLayout(4, 2));
-
-        // Komponenten erstellen
-        JLabel nameLabel = new JLabel("Name:");
-        JTextField nameField = new JTextField();
-
-        JLabel emailLabel = new JLabel("E-Mail:");
-        JTextField emailField = new JTextField();
-
-        JButton submitButton = new JButton("Absenden");
-        JLabel messageLabel = new JLabel("");
-
-        // Button-Aktion
-        submitButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                String name = nameField.getText();
-                String email = emailField.getText();
-                messageLabel.setText("Hallo " + name + ", danke!");
-            }
-        });
-
-        // Komponenten zum Frame hinzufügen
-        frame.add(nameLabel);
-        frame.add(nameField);
-        frame.add(emailLabel);
-        frame.add(emailField);
-        frame.add(new JLabel()); // Leeres Feld zur Ausrichtung
-        frame.add(submitButton);
-        frame.add(new JLabel()); // Leeres Feld
-        frame.add(messageLabel);
-
-        // Fenster sichtbar machen
-        frame.setVisible(true);
-    }
-}
-
+- Albin 
+- Bean
+- Lenni
